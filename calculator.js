@@ -42,7 +42,8 @@ function buttonHandler(operation) {
 
         const answerString = `${num1} ${operation} ${num2} = ${sum}`;
         const listElement = document.createElement("li");
-        listElement.innerHTML = answerString
+        listElement.className="list-group-item";
+        listElement.innerHTML = answerString;
 
         answerList.appendChild(listElement);
 

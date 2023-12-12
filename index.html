@@ -4,22 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="calculatorStyles.css" />
     <title>Calculator Demo- Hansinie</title>
 </head>
 
 <body>
     <h1>Calculator</h1>
     <!-- <form action="#" id="calcForm"> -->
-        <label id="labelNum1">Enter Number 1 <input type="numeric" id="Number1" />
-        </label>
+    <label class="form-label" for="Number1">Enter Number 1 </label>
+    <input class="form-control form-control-lg" type="numeric" id="Number1" />
 
-        <label id="labelNum2">Enter Number 2 <input type="numeric" id="Number2" /></label>
-        <br>
-        <button type="submit" id="addBtn">+</button>
-        <button type="submit" id="subBtn">-</button>
-        <button type="submit" id="mulBtn">*</button>
-        <button type="submit" id="divBtn">/</button>
+    <label class="form-label" for="Number2" >Enter Number 2 </label>
+    <input class="form-control form-control-lg" type="numeric" id="Number2" />
+    <br>
+    <button class="btn btn-primary" type="submit" id="addBtn">+</button>
+    <button class="btn btn-success" type="submit" id="subBtn">-</button>
+    <button class="btn btn-danger" type="submit" id="mulBtn">*</button>
+    <button class="btn btn-warning" type="submit" id="divBtn">/</button>
 
 
 
@@ -27,14 +30,14 @@
 
     <div>
         <h2>Answers</h2>
-        <ul id="answerList">
-            
+        <ul class="list-group list-group-flush" id="answerList">
+
 
         </ul>
     </div>
 
 
-<script src="calculator.js"></script>
+    <script src="calculator.js"></script>
 </body>
 
 </html>
